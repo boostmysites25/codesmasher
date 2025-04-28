@@ -600,12 +600,12 @@ export const futureTechSectors = [
 
 // portfolio images (web development)
 export const webPortfolio = [
-  {
-    id: 1,
-    img: FiveGHomesImg,
-    title: "5g Homes",
-    link: "https://5ghighspeedinternet.co",
-  },
+  // {
+  //   id: 1,
+  //   img: FiveGHomesImg,
+  //   title: "5g Homes",
+  //   link: "https://5ghighspeedinternet.co",
+  // },
   {
     id: 2,
     img: ColdCreekcapImg,
