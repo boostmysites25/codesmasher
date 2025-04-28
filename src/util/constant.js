@@ -150,8 +150,8 @@ export const services = [
     bgColor: "bg-indigo-600",
   },
   {
-    title: "Artificial Intelligence & Machine Learning",
-    link: "/ai-ml",
+    title: "Artificial Intelligence",
+    link: "/ai-development",
     description:
       "Implement advanced AI/ML models that learn, predict, and automate to give your business a competitive edge in data-driven decision making.",
     icon: FaBrain,
@@ -167,7 +167,7 @@ export const services = [
   },
   {
     title: "Data Science & Analytics",
-    link: "/data-analytics",
+    link: "/data-science",
     description:
       "Unlock actionable insights from your data with our comprehensive analytics services, from predictive modeling to interactive dashboards.",
     icon: FaChartLine,

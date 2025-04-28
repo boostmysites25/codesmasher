@@ -856,7 +856,7 @@ export const serviceDetails = [
   {
     id: 8,
     bannerimg: Cloud1,
-    link: "cloud-computing",
+    link: "cloud-services",
     imageone: Cloud2,
     imgagetwo: Cloud3,
     title: "Cloud Computing Services",
