@@ -52,7 +52,7 @@ const HomePageBanner = () => {
 
   return (
     <div className="relative w-full bg-[#060b19] sm:min-h-screen overflow-hidden">
-      <div className="absolute left-0 top-0 w-full h-full z-[1] bg-black/80 sm:hidden flex" />
+      <div className="absolute left-0 top-0 w-full h-full bg-black/40 sm:hidden flex" />
       <ReactPlayer
         url={bannervideo}
         loop={true}
