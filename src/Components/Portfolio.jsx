@@ -97,24 +97,26 @@ const Portfolio = ({ page }) => {
                 Web Projects
               </h3>
               <div ref={sliderRef} className="keen-slider ">
-                {displayedWebPortfolio.map((obj) => (
-                  <Link
-                    to={obj.link}
-                    key={obj.id}
-                    className="keen-slider__slide border-4 dark:bg-darkblack border-primary/40 rounded-xl bg-custom-gradient object-cover"
-                  >
-                    <img
-                      src={obj.img}
-                      alt={obj.title}
-                      className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px] w-full 2xl:max-h-[467px] object-cover"
-                    />
-                    <div className="px-3 mt-3 pb-5">
-                      <h4 className="small-heading dark:text-white text-center">
-                        {obj.title}
-                      </h4>
-                    </div>
-                  </Link>
-                ))}
+                {displayedWebPortfolio
+                  .concat(displayedWebPortfolio)
+                  .map((obj) => (
+                    <Link
+                      to={obj.link}
+                      key={obj.id}
+                      className="keen-slider__slide border-4 dark:bg-darkblack border-primary/40 rounded-xl bg-custom-gradient object-cover"
+                    >
+                      <img
+                        src={obj.img}
+                        alt={obj.title}
+                        className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px] w-full 2xl:max-h-[467px] object-cover aspect-square"
+                      />
+                      <div className="px-3 mt-3 pb-5">
+                        <h4 className="small-heading dark:text-white text-center">
+                          {obj.title}
+                        </h4>
+                      </div>
+                    </Link>
+                  ))}
               </div>
             </>
           )}
@@ -125,28 +127,30 @@ const Portfolio = ({ page }) => {
                 App Projects
               </h3>
               <div ref={sliderRef2} className="keen-slider">
-                {displayedAppPortfolio.map((obj) => (
-                  <Link
-                    to={obj.link}
-                    key={obj.title}
-                    className="keen-slider__slide border-4 dark:bg-darkblack border-primary/40 rounded-xl bg-custom-gradient"
-                  >
-                    <img
-                      src={obj.img}
-                      alt={obj.title}
-                      className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px] w-full 2xl:max-h-[467px] object-cover"
-                    />
-                    {/* <div
+                {displayedAppPortfolio
+                  .concat(displayedAppPortfolio)
+                  .map((obj) => (
+                    <Link
+                      to={obj.link}
+                      key={obj.title}
+                      className="keen-slider__slide border-4 dark:bg-darkblack border-primary/40 rounded-xl bg-custom-gradient"
+                    >
+                      <img
+                        src={obj.img}
+                        alt={obj.title}
+                        className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px] w-full 2xl:max-h-[467px] object-cover aspect-square"
+                      />
+                      {/* <div
                       className={`lg:max-h-[316px] 2xl:max-h-[467px] 2xl:min-h-[467px] flex items-end w-full overflow-hidden`}
                     >
                     </div> */}
-                    <div className="px-3 mt-3 pb-5 max-h-[96px]">
-                      <h4 className="font-semibold dark:text-white text-xl text-center">
-                        {obj.title}
-                      </h4>
-                    </div>
-                  </Link>
-                ))}
+                      <div className="px-3 mt-3 pb-5 max-h-[96px]">
+                        <h4 className="font-semibold dark:text-white text-xl text-center">
+                          {obj.title}
+                        </h4>
+                      </div>
+                    </Link>
+                  ))}
               </div>
             </>
           )}

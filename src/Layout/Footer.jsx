@@ -9,7 +9,7 @@ const Footer = () => {
   const isDarkMode = theme === "dark";
 
   return (
-    <div className="relative bg-primary dark:bg-gray-900 z-20 overflow-hidden">
+    <div className="relative bg-gray-900 dark:bg-gray-900 z-20 overflow-hidden">
       <div
         className={`absolute ${
           isDarkMode ? `flex` : "hidden"
@@ -90,7 +90,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="text-white  text-2xl transition-colors"
                   >
-                    <obj.icon className="hover:text-darkblack dark:hover:text-primary cursor-ponter" />
+                    <obj.icon className="hover:text-primary cursor-ponter" />
                   </Link>
                 ))}
               </div>

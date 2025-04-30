@@ -18,7 +18,7 @@ const LandingHeader = () => {
   //   navigate("/contact-us");
   // };
   return (
-    <nav className="fixed w-full top-0 !z-50 bg-primary dark:bg-transparent shadow-md backdrop-blur-sm">
+    <nav className="fixed w-full top-0 !z-50 bg-black/30 dark:bg-transparent shadow-md backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
@@ -41,7 +41,7 @@ const LandingHeader = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-white hover:text-blue-300 dark:hover:text-primary cursor-pointer"
+              className="text-white hover:text-primary dark:hover:text-primary cursor-pointer"
             >
               Home
             </Link>
@@ -52,8 +52,8 @@ const LandingHeader = () => {
               smooth={true}
               offset={-140}
               duration={1000}
-              activeClass="active-link text-blue-300 dark:text-gray-800 font-bold"
-              className="text-white hover:text-blue-300 dark:hover:text-primary cursor-pointer"
+              activeClass="active-link text-primary dark:text-gray-800 font-bold"
+              className="text-white hover:text-primary dark:hover:text-primary cursor-pointer"
             >
               About Us
             </Scrolllink>
@@ -64,15 +64,15 @@ const LandingHeader = () => {
               smooth={true}
               offset={-140}
               duration={1000}
-              activeClass="active-link text-blue-300 dark:text-gray-800 font-bold"
-              className="text-white hover:text-blue-300 dark:hover:text-primary cursor-pointer"
+              activeClass="active-link text-primary dark:text-gray-800 font-bold"
+              className="text-white hover:text-primary dark:hover:text-primary cursor-pointer"
             >
               Services
             </Scrolllink>
 
             <Link
               to="/blogs"
-              className="text-white hover:text-blue-300 dark:hover:text-primary cursor-pointer"
+              className="text-white hover:text-primary dark:hover:text-primary cursor-pointer"
             >
               Blogs
             </Link>
@@ -134,7 +134,7 @@ const LandingHeader = () => {
               smooth={true}
               offset={-140}
               duration={1000}
-              activeClass="active-link text-blue-300 dark:text-gray-800 font-bold"
+              activeClass="active-link text-primary dark:text-gray-800 font-bold"
               className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               About Us
@@ -147,7 +147,7 @@ const LandingHeader = () => {
               smooth={true}
               offset={-140}
               duration={1000}
-              activeClass="active-link text-blue-300 dark:text-gray-800 font-bold"
+              activeClass="active-link text-primary dark:text-gray-800 font-bold"
               className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Services

@@ -22,7 +22,7 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full top-0 !z-50 bg-primary dark:bg-transparent shadow-md backdrop-blur-sm">
+    <nav className="fixed w-full top-0 !z-50 bg-black/30 dark:bg-transparent shadow-md backdrop-blur-sm">
       <div className="wrapper">
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
@@ -43,8 +43,8 @@ const Header = () => {
               <Link
                 key={index}
                 to={path}
-                className={`text-white hover:text-blue-300 capitalize dark:hover:text-blue-300 ${
-                  isActive(path) ? "font-bold dark:text-primary" : ""
+                className={`text-white hover:text-primary capitalize dark:hover:text-primary ${
+                  isActive(path) ? "font-bold text-primary" : ""
                 }`}
               >
                 {path === "/"
