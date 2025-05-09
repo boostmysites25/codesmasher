@@ -6,6 +6,7 @@ import { useParams, Link } from "react-router-dom";
 import { LoadingSpinner } from "../Components/Loader";
 import LeadForm from "../Components/landingpage/LeadForm";
 import Ourvalues from "../Components/Ourvalues";
+import ReactPlayer from "react-player";
 
 const ServiceDetails = () => {
   const { title } = useParams();
@@ -24,17 +25,29 @@ const ServiceDetails = () => {
 
   return (
     <div className="dark:bg-darkblack">
-      <div className="pt-[4.5rem]">
-        <section
-          data-aos="fade-down"
-          className="flex relative justify-start bg-darkblack p-10 items-end h-[15rem] sm:h-[30rem] bg-current bg-cover sm:bg-cover bg-no-repeat bg-center"
-          style={{ backgroundImage: `url(${serviceDetail.bannerimg})` }}
-        >
-          <div className="absolute top-0 left-0 w-full h-full bg-black/50" />
+      <div className="service-video relative h-[70vh] sm:h-[90vh]">
+        <div className="absolute z-[1] top-0 left-0 w-full h-full bg-black/30" />
+
+        <div className="absolute inset-0 text-center h-full flex items-center justify-center">
           <h1 className="text-[34px] z-20 sm:text-[48px] font-bold text-white">
             {serviceDetail.title}
           </h1>
-        </section>
+        </div>
+        <ReactPlayer
+          url={serviceDetail.video}
+          loop={true}
+          playsinline
+          playing={true}
+          muted
+          className="object-cover videoplayer"
+          config={{
+            file: {
+              attributes: {
+                style: {},
+              },
+            },
+          }}
+        />
       </div>
       <div className="relative overflow-hidden">
         <div

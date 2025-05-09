@@ -14,6 +14,7 @@ import img11 from "../assets/images/clients/11.png";
 import img12 from "../assets/images/clients/12.png";
 import img13 from "../assets/images/clients/13.png";
 import img14 from "../assets/images/clients/14.png";
+import img15 from "../assets/images/clients/15.png";
 
 const animation = { duration: 10000, easing: (t) => t };
 
@@ -67,7 +68,7 @@ const BrandLogos = () => {
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
           <h2 className="main-title leading-tight max-w-[60rem] mx-auto text-center capitalize">
-            Join our <span className="text-primary">150+</span> happy clients
+            Join our <span className="text-primary">60+</span> happy clients
           </h2>
         </div>
         <div
@@ -95,6 +96,7 @@ const BrandLogos = () => {
             img12,
             img13,
             img14,
+            img15,
           ].map((img, index) => (
             <div
               key={index}

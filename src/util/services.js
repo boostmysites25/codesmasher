@@ -48,6 +48,19 @@ import nlp1 from "../assets/images/services/NLP1.webp";
 import nlp2 from "../assets/images/services/NLP2.webp";
 import nlp3 from "../assets/images/services/NLP3.webp";
 
+// service banner videos
+import appDevVideo from "../assets/video/services/App Dev.mp4";
+import webDevVideo from "../assets/video/services/Web Dev.mp4";
+import uxUiVideo from "../assets/video/services/Uiux.mp4";
+import aiVideo from "../assets/video/services/Ai.mp4";
+import dataScienceVideo from "../assets/video/services/Data Science.mp4";
+import robotAutomationVideo from "../assets/video/services/Rpa.mp4";
+import blockchainVideo from "../assets/video/services/Blockchain.mp4";
+import gameDevVideo from "../assets/video/services/Game Dev.mp4";
+import cloudVideo from "../assets/video/services/Cloud.mp4";
+import nlpVideo from "../assets/video/services/Nlp.mp4";
+import chatbotVideo from "../assets/video/services/Chatbot.mp4";
+
 export const serviceDetails = [
   {
     id: 1,
@@ -55,6 +68,7 @@ export const serviceDetails = [
     link: "app-development",
     imageone: appdevimg1,
     imgagetwo: appdevimg2,
+    video: appDevVideo,
     title: "App Development",
     heading: "Native & Cross-Platform Mobile Solutions That Drive Engagement",
     description: `
@@ -174,6 +188,7 @@ export const serviceDetails = [
     link: "web-development",
     imageone: webDevImg1,
     imgagetwo: webDevImg2,
+    video: webDevVideo,
     title: "Web Development",
     heading: "Enterprise-Grade Web Solutions for Digital Transformation",
     description: `
@@ -294,6 +309,7 @@ export const serviceDetails = [
     link: "blockchain-development",
     imageone: Blockchain_DevelopmentSub1,
     imgagetwo: Blockchain_DevelopmentSub2,
+    video: blockchainVideo,
     title: "Blockchain Development",
     heading: "Decentralized Solutions for Trustless Business Logic",
     description: `
@@ -413,6 +429,7 @@ export const serviceDetails = [
     link: "game-development",
     imageone: Game_DevelopmentSub1,
     imgagetwo: Game_DevelopmentSub2,
+    video: gameDevVideo,
     title: "Game Development",
     heading: "Immersive Gaming Experiences Across Platforms",
     description: `
@@ -523,6 +540,7 @@ export const serviceDetails = [
     link: "rpa",
     imageone: Robot_Process_automationSub1,
     imgagetwo: Robot_Process_automationSub2,
+    video: robotAutomationVideo,
     title: "Robotic Process Automation",
     heading: "Intelligent Automation for Operational Excellence",
     description: `
@@ -633,6 +651,7 @@ export const serviceDetails = [
     link: "ai-development",
     imageone: AI_DevelopmentSub1,
     imgagetwo: AI_DevelopmentSub2,
+    video: aiVideo,
     title: "Artificial Intelligence Development",
     heading: "Transformative AI Solutions for Competitive Advantage",
     description: `
@@ -742,123 +761,11 @@ export const serviceDetails = [
   },
   {
     id: 7,
-    bannerimg: Machine_Learning_Solutions,
-    link: "machine-learning",
-    imageone: Machine_Learning_SolutionsSub1,
-    imgagetwo: Machine_Learning_SolutionsSub2,
-    title: "Machine Learning Services",
-    heading: "Production-Grade ML Models That Deliver Business Value",
-    description: `
-      We build, deploy, and maintain machine learning systems that operate at scale. Our expertise spans traditional ML algorithms to cutting-edge 
-      deep learning architectures, all focused on solving specific business problems.
-
-      Implementation standards:
-      - Automated feature engineering
-      - Continuous model training
-      - Drift detection systems
-      - Shadow deployment
-      - Performance monitoring
-    `,
-    secondHeading: "ML Specializations",
-    services: [
-      {
-        title: "Supervised Learning",
-        description: `
-          Predictive modeling solutions:
-          - Regression analysis
-          - Classification systems
-          - Ensemble methods
-          - Time series forecasting
-          - Causal inference
-        `,
-      },
-      {
-        title: "Deep Learning",
-        description: `
-          Neural network architectures:
-          - CNN for visual data
-          - RNN/LSTM for sequences
-          - Transformer models
-          - Autoencoder systems
-          - GAN implementations
-        `,
-      },
-      {
-        title: "ML Operations",
-        description: `
-          Production ML management:
-          - Feature store implementation
-          - Model versioning
-          - A/B testing frameworks
-          - Monitoring dashboards
-          - Automated retraining
-        `,
-      },
-    ],
-    thirdHeading: "ML Technology Ecosystem",
-    thirdDescription: `
-      Development:
-      - Python data stack (NumPy, Pandas)
-      - Jupyter/Colab environments
-      - AutoML frameworks
-      - Hyperparameter optimization
-      - Experiment tracking
-
-      Deployment:
-      - TensorFlow Serving
-      - TorchScript
-      - ONNX runtime
-      - AWS SageMaker
-      - Kubeflow pipelines
-
-      Monitoring:
-      - Evidently AI
-      - Prometheus metrics
-      - Data drift detection
-      - Model explainability
-      - Performance alerts
-    `,
-    whyMatter: `
-      ML business outcomes:
-      - 35% improvement in predictive accuracy
-      - 60% faster data processing
-      - 80% reduction in manual analysis
-      - 5x faster decision making
-      - New revenue streams from data
-    `,
-    fourthHeading: "ML Implementation Process",
-    fourthDescripiton: `
-      1. Problem Scoping:
-      - Business KPI mapping
-      - Data availability check
-      - Baseline establishment
-      - ROI projection
-
-      2. Data Preparation:
-      - ETL pipeline creation
-      - Feature engineering
-      - Data validation
-      - Splitting strategy
-
-      3. Model Development:
-      - Algorithm selection
-      - Training infrastructure
-      - Evaluation metrics
-      - Explainability analysis
-
-      4. Productionization:
-      - API endpoint creation
-      - Monitoring setup
-      - CI/CD integration
-      - Maintenance planning
-    `,
-  },
-  {
-    id: 8,
     bannerimg: Cloud1,
     link: "cloud-services",
     imageone: Cloud2,
     imgagetwo: Cloud3,
+    video: cloudVideo,
     title: "Cloud Computing Services",
     heading: "Enterprise Cloud Solutions for Scalability and Innovation",
     description: `
@@ -967,11 +874,12 @@ export const serviceDetails = [
     `,
   },
   {
-    id: 9,
+    id: 8,
     bannerimg: Data_Science_and_Analytics,
     link: "data-science",
     imageone: Data_Science_and_Analyticssub1,
     imgagetwo: Data_Science_and_Analyticssub2,
+    video: dataScienceVideo,
     title: "Data Science Services",
     heading: "Actionable Insights from Complex Data Ecosystems",
     description: `
@@ -1080,11 +988,12 @@ export const serviceDetails = [
     `,
   },
   {
-    id: 10,
+    id: 9,
     bannerimg: nlp1,
     link: "nlp",
     imageone: nlp2,
     imgagetwo: nlp3,
+    video: nlpVideo,
     title: "Natural Language Processing",
     heading: "Human-Language Understanding at Enterprise Scale",
     description: `
@@ -1193,11 +1102,12 @@ export const serviceDetails = [
     `,
   },
   {
-    id: 11,
+    id: 10,
     bannerimg: UX_UI_Design,
     link: "ux-ui-design",
     imageone: UX_UI_Sub1,
     imgagetwo: UX_UI_Sub2,
+    video: uxUiVideo,
     title: "UI/UX Design",
     heading: "Human-Centered Digital Experiences That Convert",
     description: `
@@ -1311,11 +1221,12 @@ export const serviceDetails = [
     `,
   },
   {
-    id: 12,
+    id: 11,
     bannerimg: AICallingAgency,
     link: "chatbot-development",
     imageone: AICallingAgencysub1,
     imgagetwo: AICallingAgencysub2,
+    video: chatbotVideo,
     title: "Chatbot Development",
     heading: "Intelligent Conversational Agents for Seamless Engagement",
     description: `

@@ -78,7 +78,7 @@ const Header = () => {
             </button>
             <button
               onClick={toggleMenu}
-              className="text-gray-900 dark:text-white"
+              className="text-white"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

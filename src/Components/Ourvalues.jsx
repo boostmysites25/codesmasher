@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import coverImg from "../assets/images/ourvaluescover.webp";
 
 const OurValues = () => {
   const stats = [
@@ -8,25 +9,25 @@ const OurValues = () => {
       value: 6,
       label: "Years of Experience",
       icon: "⏳",
-      color: "from-purple-500 to-blue-500",
+      // color: "from-purple-500 to-blue-500",
     },
     {
       value: 100,
       label: "Expert Team",
       icon: "🧠",
-      color: "from-blue-500 to-cyan-500",
+      // color: "from-blue-500 to-cyan-500",
     },
     {
       value: 60,
       label: "Clients",
       icon: "🤝",
-      color: "from-cyan-500 to-emerald-500",
+      // color: "from-cyan-500 to-emerald-500",
     },
     {
       value: 200,
       label: "Projects",
       icon: "🚀",
-      color: "from-emerald-500 to-green-500",
+      // color: "from-emerald-500 to-green-500",
     },
   ];
 
@@ -35,13 +36,18 @@ const OurValues = () => {
 
   return (
     <section className="relative py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+      <img
+        src={coverImg}
+        className="absolute inset-0 object-cover object-center h-full w-full"
+        alt=""
+      />
       {/* Light/Dark Background Patterns */}
-      <div className="absolute inset-0 dark:opacity-20 opacity-10">
+      {/* <div className="absolute inset-0 dark:opacity-20 opacity-10">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLDJMMTAsOEg3TDUsMTBINkwxMiwyMk0xMiwyTDE0LDhIMTdMMTksMTBIMThMMTIsMjJNMTIsMTVMMTMsMTdIMTFMMTIsMTVNMTIsMTVMMTEsMTNIMTNNMTIsMTVMMTMsMTNIMTFaJyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMC41IiBkYXJrOnN0cm9rZT0iI2ZmZiIvPjwvc3ZnPg==')]"></div>
-      </div>
+      </div> */}
 
       {/* Floating Nodes - Different colors for light/dark */}
-      {[...Array(12)].map((_, i) => (
+      {/* {[...Array(12)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute rounded-full bg-blue-400/10 dark:bg-blue-500/10"
@@ -60,7 +66,7 @@ const OurValues = () => {
             ease: "easeInOut",
           }}
         />
-      ))}
+      ))} */}
 
       <div className="wrapper relative z-10">
         <motion.div
@@ -75,8 +81,8 @@ const OurValues = () => {
               key={stat.label}
               className={`relative p-8 rounded-xl backdrop-blur-sm border ${
                 hoveredCard === index
-                  ? "bg-white/70 dark:bg-gray-800/70 border-blue-300 dark:border-blue-400/50 shadow-lg"
-                  : "bg-white/50 dark:bg-gray-800/30 border-gray-200 dark:border-gray-600/30 shadow-md"
+                  ? ":bg-gray-800/70 border-blue-300 dark:border-blue-400/50 shadow-lg"
+                  : "bg-gray-800/30 border-gray-200 dark:border-gray-600/30 shadow-md"
               } transition-all duration-300 overflow-hidden`}
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
@@ -95,15 +101,15 @@ const OurValues = () => {
               </div>
 
               <div className="flex flex-col items-center">
-                <div className="text-4xl mb-4 dark:text-white/80 text-gray-700">
+                <div className="text-4xl mb-4 dark:text-white/80 text-gray-300">
                   {stat.icon}
                 </div>
                 <h3
-                  className={`text-5xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}
+                  className={`text-6xl font-bold bg-gradient-to-r from-white to-white bg-clip-text text-transparent mb-2`}
                 >
                   {stat.value}+
                 </h3>
-                <p className="text-lg font-medium dark:text-gray-300 text-gray-600">
+                <p className="text-lg font-medium dark:text-gray-300 text-gray-200">
                   {stat.label}
                 </p>
               </div>

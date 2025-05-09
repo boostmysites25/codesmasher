@@ -213,3 +213,11 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.service-video video {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
