@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import coverImg from "../assets/images/ourvaluescover.webp";
+import CountUp from "react-countup";
 
 const OurValues = () => {
   const stats = [
@@ -41,33 +42,6 @@ const OurValues = () => {
         className="absolute inset-0 object-cover object-center h-full w-full"
         alt=""
       />
-      {/* Light/Dark Background Patterns */}
-      {/* <div className="absolute inset-0 dark:opacity-20 opacity-10">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLDJMMTAsOEg3TDUsMTBINkwxMiwyMk0xMiwyTDE0LDhIMTdMMTksMTBIMThMMTIsMjJNMTIsMTVMMTMsMTdIMTFMMTIsMTVNMTIsMTVMMTEsMTNIMTNNMTIsMTVMMTMsMTNIMTFaJyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMC41IiBkYXJrOnN0cm9rZT0iI2ZmZiIvPjwvc3ZnPg==')]"></div>
-      </div> */}
-
-      {/* Floating Nodes - Different colors for light/dark */}
-      {/* {[...Array(12)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute rounded-full bg-blue-400/10 dark:bg-blue-500/10"
-          style={{
-            width: `${Math.random() * 100 + 50}px`,
-            height: `${Math.random() * 100 + 50}px`,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          animate={{
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: Math.random() * 5 + 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      ))} */}
-
       <div className="wrapper relative z-10">
         <motion.div
           ref={ref}
@@ -107,7 +81,13 @@ const OurValues = () => {
                 <h3
                   className={`text-6xl font-bold bg-gradient-to-r from-white to-white bg-clip-text text-transparent mb-2`}
                 >
-                  {stat.value}+
+                  <CountUp
+                    suffix="+"
+                    end={stat.value}
+                    duration={5}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
                 </h3>
                 <p className="text-lg font-medium dark:text-gray-300 text-gray-200">
                   {stat.label}

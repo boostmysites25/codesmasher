@@ -27,7 +27,11 @@ const Header = () => {
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
             <Link to="/" className="w-auto text-white">
-              <img src={logo} alt="logo" className="w-[3rem] md:w-[4.3rem] scale-125 ml-[1rem]" />
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[3rem] md:w-[4.3rem] scale-125 ml-[1rem]"
+              />
             </Link>
           </div>
 
@@ -57,7 +61,7 @@ const Header = () => {
               onClick={navigateTo}
               className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary"
             >
-              Contact Us
+              Let's Connect
             </button>
             <button
               onClick={toggleTheme}
@@ -69,6 +73,12 @@ const Header = () => {
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
+            <button
+              onClick={navigateTo}
+              className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary"
+            >
+              Let's Connect
+            </button>
             <button
               onClick={toggleTheme}
               className={`p-2 rounded-full bg-gray-100 dark:bg-gray-800 dark:text-yellow-300 text-gray-600`}
@@ -112,12 +122,6 @@ const Header = () => {
                   : path.replace("/", "").replace("-", " ")}
               </Link>
             ))}
-            {/* <button
-              onClick={navigateTo}
-              className="w-full text-center bg-primary  text-white px-6 py-2 rounded-md hover:bg-blue-600 transition-colors"
-            >
-              Contact Us
-            </button> */}
           </div>
         </div>
       )}

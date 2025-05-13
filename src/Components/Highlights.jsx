@@ -8,6 +8,8 @@ const Highlights = () => {
   const navigateTo = (link) => {
     navigate(link);
   };
+
+  return null;
   return (
     <section className="z-30">
       <div className="wrapper paddingtop paddingbottom">

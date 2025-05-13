@@ -79,9 +79,10 @@ import { SiBlockchaindotcom } from "react-icons/si";
 
 export const companyDetails = {
   name: "CodeSmasher",
-  email: "abc@xyz.com",
-  phone: "+91-00000000",
-  address: "ABC Building, XYZ Street, City, State, Country",
+  email: "info@codesmasher.tech",
+  phone: "+91-9391181982",
+  address:
+    "WeWork Space Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
   socialLinks: [
     {
       href: "",
@@ -104,8 +105,7 @@ export const companyDetails = {
       icon: FaYoutube,
     },
   ],
-  whatsapp: "",
-  // whatsapp: "https://wa.me/",
+  whatsapp: "https://wa.me/919391181982",
 };
 
 export const services = [
@@ -484,13 +484,13 @@ export const futureTechSectors = [
     description:
       "Reinventing production with intelligent automation, predictive maintenance, and data-driven smart factories.",
   },
-  {
-    id: 4,
-    img: energy,
-    title: "Energy",
-    description:
-      "Powering the energy sector with AI-based optimization, seamless renewable integration, and smart grid technologies.",
-  },
+  // {
+  //   id: 4,
+  //   img: energy,
+  //   title: "Energy",
+  //   description:
+  //     "Powering the energy sector with AI-based optimization, seamless renewable integration, and smart grid technologies.",
+  // },
   {
     id: 5,
     img: retail,
@@ -533,41 +533,41 @@ export const futureTechSectors = [
     description:
       "Innovating electronics with AI-driven personalization, smart home automation, and connected wearable technologies.",
   },
-  {
-    id: 11,
-    img: aerospace,
-    title: "Aerospace and Defense",
-    description:
-      "Modernizing aerospace and defense with intelligent automation, advanced sensor technologies, and secure smart systems.",
-  },
-  {
-    id: 12,
-    img: chemicals,
-    title: "Chemicals",
-    description:
-      "Optimizing chemical manufacturing with AI-enhanced automation, smart quality controls, and predictive process management.",
-  },
-  {
-    id: 13,
-    img: mining,
-    title: "Mining",
-    description:
-      "Revolutionizing mining operations through AI-driven exploration, autonomous equipment, and safety optimization systems.",
-  },
-  {
-    id: 14,
-    img: agriculture,
-    title: "Agriculture",
-    description:
-      "Boosting agricultural productivity with AI-based crop monitoring, smart irrigation, and automated farming solutions.",
-  },
-  {
-    id: 15,
-    img: construction,
-    title: "Construction",
-    description:
-      "Reimagining construction with AI-powered project management, autonomous machinery, and predictive maintenance technologies.",
-  },
+  // {
+  //   id: 11,
+  //   img: aerospace,
+  //   title: "Aerospace and Defense",
+  //   description:
+  //     "Modernizing aerospace and defense with intelligent automation, advanced sensor technologies, and secure smart systems.",
+  // },
+  // {
+  //   id: 12,
+  //   img: chemicals,
+  //   title: "Chemicals",
+  //   description:
+  //     "Optimizing chemical manufacturing with AI-enhanced automation, smart quality controls, and predictive process management.",
+  // },
+  // {
+  //   id: 13,
+  //   img: mining,
+  //   title: "Mining",
+  //   description:
+  //     "Revolutionizing mining operations through AI-driven exploration, autonomous equipment, and safety optimization systems.",
+  // },
+  // {
+  //   id: 14,
+  //   img: agriculture,
+  //   title: "Agriculture",
+  //   description:
+  //     "Boosting agricultural productivity with AI-based crop monitoring, smart irrigation, and automated farming solutions.",
+  // },
+  // {
+  //   id: 15,
+  //   img: construction,
+  //   title: "Construction",
+  //   description:
+  //     "Reimagining construction with AI-powered project management, autonomous machinery, and predictive maintenance technologies.",
+  // },
   {
     id: 16,
     img: hospitality,
@@ -589,13 +589,13 @@ export const futureTechSectors = [
     description:
       "Redefining consulting with AI-assisted decision-making, predictive insights, and automated research capabilities.",
   },
-  {
-    id: 19,
-    img: legal,
-    title: "Legal",
-    description:
-      "Revolutionizing legal services with AI-powered contract analysis, smart document automation, and predictive case outcomes.",
-  },
+  // {
+  //   id: 19,
+  //   img: legal,
+  //   title: "Legal",
+  //   description:
+  //     "Revolutionizing legal services with AI-powered contract analysis, smart document automation, and predictive case outcomes.",
+  // },
 ];
 
 // portfolio images (web development)

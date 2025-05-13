@@ -86,7 +86,7 @@ const LandingHeader = () => {
               activeClass="active-link "
               className="primary-btn"
             >
-              Contact Us
+              Let's Connect
             </Scrolllink>
             <button
               onClick={toggleTheme}
@@ -98,6 +98,17 @@ const LandingHeader = () => {
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
+            <Scrolllink
+              to="contact"
+              key={"contact"}
+              spy={true}
+              smooth={true}
+              offset={-140}
+              duration={1000}
+              className="cursor-pointer primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary"
+            >
+              Let's Connect
+            </Scrolllink>
             <button
               onClick={toggleTheme}
               className={`p-2 rounded-full bg-gray-100 dark:bg-gray-800 dark:text-yellow-300 text-gray-600`}
