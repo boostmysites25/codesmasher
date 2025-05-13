@@ -22,7 +22,7 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full top-0 !z-50 bg-black/30 dark:bg-transparent shadow-md backdrop-blur-sm">
+    <nav className="fixed w-full top-0 !z-50 bg-black/30 dark:bg-transparent shadow-md backdrop-blur-sm transition-colors duration-300">
       <div className="wrapper">
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
@@ -47,7 +47,7 @@ const Header = () => {
               <Link
                 key={index}
                 to={path}
-                className={`text-white hover:text-primary capitalize dark:hover:text-primary ${
+                className={`text-white hover:text-primary capitalize dark:hover:text-primary transition-colors duration-200 ${
                   isActive(path) ? "font-bold text-primary" : ""
                 }`}
               >
@@ -59,13 +59,13 @@ const Header = () => {
 
             <button
               onClick={navigateTo}
-              className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary"
+              className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary hover:shadow-lg transition-all duration-300"
             >
               Let's Connect
             </button>
             <button
               onClick={toggleTheme}
-              className={`p-2 rounded-full bg-gray-100 dark:bg-gray-800 dark:text-yellow-300 text-gray-600`}
+              className={`p-2 rounded-full bg-gray-100 dark:bg-darkcard dark:text-yellow-300 text-gray-600 hover:shadow-md transition-all duration-300`}
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -75,13 +75,13 @@ const Header = () => {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={navigateTo}
-              className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary"
+              className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary hover:shadow-lg transition-all duration-300"
             >
               Let's Connect
             </button>
             <button
               onClick={toggleTheme}
-              className={`p-2 rounded-full bg-gray-100 dark:bg-gray-800 dark:text-yellow-300 text-gray-600`}
+              className={`p-2 rounded-full bg-gray-100 dark:bg-darkcard dark:text-yellow-300 text-gray-600 hover:shadow-md transition-all duration-300`}
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -99,7 +99,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-darkcard border-t dark:border-darkborder shadow-lg">
             {[
               "/",
               "/about-us",
@@ -113,8 +113,8 @@ const Header = () => {
                 key={index}
                 to={path}
                 onClick={toggleMenu}
-                className={`block px-3 py-2 capitalize rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 ${
-                  isActive(path) ? "bg-gray-100 dark:bg-gray-800" : ""
+                className={`block px-3 py-2 capitalize rounded-md text-base font-medium text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-darksecondary transition-colors duration-200 ${
+                  isActive(path) ? "bg-gray-100 dark:bg-darksecondary text-primary dark:text-primary" : ""
                 }`}
               >
                 {path === "/"

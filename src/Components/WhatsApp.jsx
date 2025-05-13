@@ -8,7 +8,7 @@ const WhatsAppIcon = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="fixed bottom-8 right-6 z-50">
+    <div className="fixed bottom-8 left-6 z-50">
       <div
         className="relative"
         onMouseEnter={() => setIsHovered(true)}
@@ -26,22 +26,22 @@ const WhatsAppIcon = () => {
         </Link>
 
         {/* Animated Tooltip */}
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {isHovered && (
             <motion.div
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 10 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="absolute right-full top-1/2 transform -translate-y-1/2 mr-3"
+              className="absolute left-full top-1/2 transform -translate-y-1/2 mr-3"
             >
               <div className="relative bg-white text-gray-800 text-sm font-semibold px-3 py-2 rounded-md shadow-lg whitespace-nowrap">
                 Chat with us
-                <div className="absolute right-0 top-1/2 transform translate-x-1 -translate-y-1/2 w-2 h-2 bg-white rotate-45"></div>
+                <div className="absolute left-0 top-1/2 transform translate-x-1 -translate-y-1/2 w-2 h-2 bg-white rotate-45"></div>
               </div>
             </motion.div>
           )}
-        </AnimatePresence>
+        </AnimatePresence> */}
 
         {/* Optional pulse animation */}
         <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-0 group-hover:opacity-40 animate-ping -z-10"></div>

@@ -51,8 +51,8 @@ const HomePageBanner = () => {
   }, [displayHeading, displayParagraph, headingComplete]);
 
   return (
-    <div className="relative w-full bg-[#060b19] sm:min-h-screen overflow-hidden">
-      <div className="absolute left-0 top-0 w-full h-full bg-black/40 sm:hidden flex" />
+    <div className="relative w-full bg-[#050a15] sm:min-h-screen overflow-hidden">
+      <div className="absolute left-0 top-0 w-full h-full bg-black/50 sm:hidden flex" />
       <ReactPlayer
         url={bannervideo}
         loop={true}
@@ -70,7 +70,7 @@ const HomePageBanner = () => {
       />
       <div className="absolute flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
         <div className="wrapper">
-          <h1 className="hero-title sm:text-6xl text-2xl whitespace-pre-line font-bold text-center text-white mb-6">
+          <h1 className="hero-title sm:text-6xl text-2xl whitespace-pre-line font-bold text-center text-white mb-8 drop-shadow-lg">
             {displayHeading}
             {cursorPosition === "heading" && (
               <span
@@ -83,8 +83,8 @@ const HomePageBanner = () => {
             )}
           </h1>
 
-          <div className="flex flex-col gap-8 pb-5">
-            <p className="font-bold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-white sm:text-start text-center">
+          <div className="flex flex-col gap-10 pb-5">
+            <p className="font-bold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-white sm:text-start text-center drop-shadow-md">
               {displayParagraph}
               {cursorPosition === "paragraph" && (
                 <span
@@ -96,20 +96,20 @@ const HomePageBanner = () => {
                 </span>
               )}
             </p>
-            <div className="flex justify-center gap-5">
+            <div className="flex justify-center gap-6">
               <button
                 data-aos="fade-right"
                 onClick={() => navigateTo("/about-us")}
-                className="primary-btn"
+                className="primary-btn hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
               >
-                Get Start{" "}
+                Get Started
               </button>
               <button
                 data-aos="fade-left"
                 onClick={() => navigateTo("/contact-us")}
-                className="secondary-btn-white"
+                className="secondary-btn-white hover:shadow-lg hover:shadow-white/20 transition-all duration-300"
               >
-                Contact Us{" "}
+                Contact Us
               </button>
             </div>
           </div>

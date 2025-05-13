@@ -4,6 +4,7 @@ import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import ScrollToTop from "../Components/ScrollToTop";
 import WhatsAppIcon from "../Components/WhatsApp";
+import TawkChat from "../Components/TawkChat";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,12 +15,13 @@ const AppLayout = () => {
     offset: -10,
   });
   return (
-    <div>
+    <div className="dark:bg-darkblack">
       <Header />
       <WhatsAppIcon />
+      <TawkChat />
       {/* <PopupContactForm /> */}
       <ScrollToTop />
-      <div className="bg-white dark:bg-darkbackground">
+      <div className="bg-white dark:bg-darkbackground dark:text-gray-200 transition-colors duration-300">
         <Outlet />
       </div>
       <Footer />

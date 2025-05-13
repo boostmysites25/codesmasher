@@ -16,6 +16,14 @@ html {
   background-color: #020816;
   overflow-x: hidden;
 }
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #0a0a0a;
+}
 .videoplayer {
   width: 100vw !important;
   height: 100vh !important;
@@ -65,31 +73,40 @@ html {
     @apply pb-[4rem];
   }
   .main-title {
-    @apply text-[30px] sm:text-[40px]  font-bold dark:text-white text-darkbackground;
+    @apply text-[30px] sm:text-[40px] font-bold dark:text-white text-darkbackground;
   }
   .desc {
-    @apply text-base font-normal dark:text-white text-darkbackground;
+    @apply text-base font-normal dark:text-gray-200 text-darkbackground;
   }
   .section-heading {
-    @apply text-[32px] font-bold;
+    @apply text-[32px] font-bold dark:text-white;
   }
   .hero-heading {
     @apply font-bold text-2xl text-white;
   }
   .small-heading {
-    @apply text-xl  font-semibold;
+    @apply text-xl font-semibold dark:text-white;
   }
   .small-desc {
-    @apply text-[17px]  font-normal;
+    @apply text-[17px] font-normal dark:text-gray-300;
   }
   .primary-btn {
-    @apply bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/70 transition-colors;
+    @apply bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/80 transition-colors shadow-md;
   }
   .secondary-btn-white {
-    @apply dark:bg-white hover:bg-gradient-to-b hover:from-white hover:to-primary bg-gradient-to-b from-white to-[#E5E5E8] text-black px-6 py-2 rounded-md hover:bg-white/70 transition-colors duration-300;
+    @apply dark:bg-white hover:bg-gradient-to-b hover:from-white hover:to-primary bg-gradient-to-b from-white to-[#E5E5E8] text-black px-6 py-2 rounded-md hover:bg-white/70 transition-colors duration-300 shadow-md;
   }
   .darkandlightcardhovertext {
     @apply dark:group-hover:text-white group-hover:text-white;
+  }
+  .dark-card {
+    @apply dark:bg-darkcard dark:border-darkborder dark:shadow-lg dark:shadow-black/30;
+  }
+  .dark-section {
+    @apply dark:bg-darkbackground;
+  }
+  .dark-gradient {
+    @apply dark:bg-darkGradient;
   }
 }
 

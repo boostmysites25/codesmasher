@@ -17,7 +17,7 @@ const LandingFooter = () => {
       />
       <footer className="w-full  px-4 py-16 md:px-8 z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-4 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-[1fr,12rem,12rem] gap-8 items-start">
             <div className="col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <img src={logo} alt="logo" className="w-[15rem]" />
@@ -57,12 +57,6 @@ const LandingFooter = () => {
                     Services
                   </Scrolllink>
                 </li>
-              </ul>
-            </div>
-
-            <div className="col-span-1">
-              <h3 className="text-white font-medium mb-4">Information</h3>
-              <ul className="space-y-2">
                 <li>
                   <Link
                     to="/blogs"
@@ -98,7 +92,7 @@ const LandingFooter = () => {
                   Send a Email
                 </button>
               </div> */}
-              <div className="flex space-x-4 mt-8">
+              <div className="flex space-x-4 mt-8 md:mt-0">
                 {companyDetails.socialLinks.map((obj, index) => (
                   <Link
                     key={index}
