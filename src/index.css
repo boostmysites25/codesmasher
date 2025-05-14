@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
   width: 6px;
 }
+.reset-html-content h1,
+.reset-html-content h2,
+.reset-html-content p {
+  all: revert;
+}
 
 ::-webkit-scrollbar-thumb {
   background-color: #ff8b0f;
