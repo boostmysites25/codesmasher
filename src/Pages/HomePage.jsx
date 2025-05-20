@@ -28,9 +28,9 @@ const HomePage = () => {
             className="object-cover rounded-xl"
           />
           <div>
-            <h1 className="main-title leading-tight" data-aos="fade-left">
+            <h2 className="main-title leading-tight" data-aos="fade-left">
               Welcome to CodeSmasher
-            </h1>
+            </h2>
             <p className="desc mt-4" data-aos="fade-left">
               At{" "}
               <span className="text-primary font-semibold">
@@ -55,9 +55,9 @@ const HomePage = () => {
       <section className="dark:bg-darkblack ">
         <div className="flex wrapper flex-col gap-4 items-center w-full paddingtop paddingbottom">
           <RoundedHeader title={"Our Services"} />
-          <h1 className="main-title text-center" data-aos="fade-up">
+          <h2 className="main-title text-center" data-aos="fade-up">
             Unlock the Future With CodeSmasher
-          </h1>
+          </h2>
           <p className="desc max-w-[40rem] text-center" data-aos="fade-up">
             We offer a wide range of services to help businesses navigate the
             digital landscape.

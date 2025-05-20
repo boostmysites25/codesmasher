@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /thank-you
+Disallow: /wp-admin/
+Allow: /
+
+Sitemap: https://codesmasher.tech/sitemap.xml
