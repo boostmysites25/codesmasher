@@ -84,7 +84,7 @@ const LandingHeader = () => {
               offset={-140}
               duration={1000}
               activeClass="active-link "
-              className="primary-btn"
+              className="primary-btn cursor-pointer"
             >
               Let's Connect
             </Scrolllink>

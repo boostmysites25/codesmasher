@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import bannervideo from "../../assets/video/bannervideo.mp4";
 import ReactPlayer from "react-player";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Banner = ({ bannerTitle, bannerDesc }) => {
   const navigate = useNavigate();
@@ -104,20 +105,24 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
               )}
             </p>
             <div className="flex justify-center gap-5">
-              <button
-                data-aos="fade-right"
-                onClick={() => navigateTo("/about-us")}
-                className="primary-btn"
+              <Link
+                to="services"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="primary-btn cursor-pointer"
               >
-                Get Start{" "}
-              </button>
-              <button
-                data-aos="fade-left"
-                onClick={() => navigateTo("/contact-us")}
-                className="secondary-btn-white"
+                Our Services
+              </Link>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="secondary-btn-white cursor-pointer"
               >
                 Contact Us{" "}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

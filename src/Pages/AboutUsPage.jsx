@@ -123,7 +123,7 @@ const AboutUsPage = () => {
               thinking to deliver solutions that aren't just functional—they're
               transformative.
             </p>
-            <Link className="primary-btn mx-auto">
+            <Link to="/contact-us" className="primary-btn mx-auto">
               Reach out today—let's turn your ideas into reality.
             </Link>
             <p className="desc text-center italic">
