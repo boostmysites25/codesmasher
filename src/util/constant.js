@@ -79,7 +79,7 @@ import { SiBlockchaindotcom } from "react-icons/si";
 
 export const companyDetails = {
   name: "CodeSmasher",
-  email: "info@codesmasher.tech",
+  email: "codesmashertechnology@gmail.com",
   phone: "+91-9391181982",
   address:
     "WeWork Space Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
