@@ -138,7 +138,7 @@ const AboutUsPage = () => {
             </h2>
             <p className="desc">
               We didn't start out to be just another software company. Back in
-              [year founded], our founder Mahesh Sagar saw too many businesses
+              2020, our founder Mahesh Sagar saw too many businesses
               getting lost in tech jargon and half-baked solutions. The vision
               was simple: build a team that could bridge the gap between what
               technology can do and what businesses need it to do.
